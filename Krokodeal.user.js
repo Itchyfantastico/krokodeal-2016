@@ -394,7 +394,7 @@ function handleKroko()
 	var button = $('div.link')[0];
 	if(button != null)
 	{
-		setTimeout(function(){ button.click(); }, getRandomInt(2000, 3000));
+		setTimeout(function(){ button.click(); }, getRandomInt(2000, 4000));
 		setMessBoxSpanText("statusspan", "Kroko found & clicked!", "greenyellow");
 	} else { 
 		console.log("object 'div.link' not found!"); 
@@ -496,7 +496,7 @@ $(document).ajaxComplete(function(e,r,s)
 				if(bAutoCatch === 'true') {
 					handleKroko();
 					if (!bDebug) {
-						goNextPage(getRandomInt(5,10));
+						goNextPage(getRandomInt(120,300));
 					}
 				}
 			} else {
@@ -507,7 +507,7 @@ $(document).ajaxComplete(function(e,r,s)
 			if (!krokoCounterLimitReached) {
 				setMessBoxSpanText("statusspan", "There is something...maybe next page!!", "orange");
 				if (!bDebug) {
-					goNextPage(getRandomInt(5,10));
+					goNextPage(getRandomInt(120,300));
 				}
 			}
 		}
@@ -581,4 +581,4 @@ var links = $.map($('a[href]'),
 var nextPage = links[getRandomInt(0, links.length-1)].href;
 delete links;
 
-goNextPage(getRandomInt(120, 600));
+goNextPage(getRandomInt(120, 700));
