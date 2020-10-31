@@ -563,6 +563,11 @@ if (krokoCounterLimitReached) {
 
 setMessBoxSpanText("statusspan", "Watch out for Kroko...", "greenyellow");
 
+//Zufällig nach unten scrollen
+for (var i = 0; i < getRandomInt(0, 5); i++) {
+	window.scrollBy(getRandomInt(100, 400), 0);
+} 
+
 //Links zu Deals scrapen
 var links = $.map($('a[href]'), 
 	function(e)
