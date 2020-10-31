@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        Krokodeal-Jäger (by MoNoX)
+// @name        Krokodeal-Jäger (by MoNoX) Itchyfantastico Edition
 // @namespace   Krokodeal2016
 // @author	MoNoX
 // @description Absahnen!
